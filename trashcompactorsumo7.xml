@@ -1,0 +1,130 @@
+<scene version="2.0.2">
+	<group name="instance=MOD/sumoMaps/star.xml" pos="0.0 -2.4 0.0" rot="0.0 0.0 0.0">
+		<group name="sumoPlatform" pos="0.0 0.4 0.0"/>
+		<spawnpoint pos="-40.2 6.2 0.0"/>
+		<group name="spawns">
+			<location tags="random" pos="-59.8 5.7 -52.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 5.7 -62.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 5.7 -72.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 5.7 -102.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 5.7 -92.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 5.7 -82.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 26.0 -52.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 26.0 -62.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 26.0 -72.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 26.0 -102.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 26.0 -92.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="-59.8 26.0 -82.3" rot="0.0 180.0 0.0"/>
+			<location tags="random" pos="60.0 26.0 66.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 5.7 96.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 5.7 86.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 5.7 76.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 5.7 46.79998" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 5.7 56.79998" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 5.7 66.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 26.0 96.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 26.0 86.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 26.0 76.8" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 26.0 46.79998" rot="0.0 0.0 0.0"/>
+			<location tags="random" pos="60.0 26.0 56.79998" rot="0.0 0.0 0.0"/>
+		</group>
+		<group name="crown thief">
+			<location tags="crown_spawn_start crown_spawn" pos="22.1 6.3 -1.9" rot="0.0 0.0 0.0"/>
+			<location tags="crown_spawn" pos="22.1 6.2 -15.0" rot="0.0 0.0 0.0"/>
+			<location tags="crown_spawn" pos="22.1 6.2 -37.5" rot="0.0 0.0 0.0"/>
+			<location tags="crown_spawn" pos="22.1 6.2 12.5" rot="0.0 0.0 0.0"/>
+			<location tags="crown_spawn" pos="22.1 6.2 37.5" rot="0.0 0.0 0.0"/>
+		</group>
+		<group name="coin"/>
+		<group name="rush" pos="0.1 -1.2 0.0" rot="0.0 0.0 0.0">
+			<location tags="zone" pos="21.9 6.9 -52.2" rot="0.0 180.0 0.0"/>
+			<location tags="zone" pos="21.9 6.9 49.0" rot="0.0 180.0 0.0"/>
+			<location tags="zone" pos="21.9 6.9 -25.0" rot="0.0 180.0 0.0"/>
+			<location tags="zone" pos="21.9 6.9 25.0" rot="0.0 180.0 0.0"/>
+		</group>
+		<group name="tag"/>
+		<script file="MOD/script/force_zone.lua" param0="power=850 radius=8 respectGame=true debug=true" param1="radius=32" param2="debug=false"/>
+		<group name="force zones">
+			<location tags="force_zone" pos="105.0 6.0 70.0" rot="-90.0 0.0 0.0"/>
+			<location tags="force_zone" pos="105.0 6.0 -70.0" rot="90.0 0.0  0.0"/>
+			<location tags="force_zone" pos="94.3 6.3 -0.1" rot="0.0 0.0   90.0"/>
+		</group>
+		<script pos="0.0 100.0 0.0" file="MOD/script/basic/item_spawn.lua" param0="spawn-timer=0.5" param1="spawn-amount=1">
+			<location tags="spawns" pos="94.3 -93.50002 -0.2" rot="0.0 0.0 0.0"/>
+			<location tags="spawns" pos="94.59998 -93.50002 -10.5" rot="0.0 0.0 0.0"/>
+			<location tags="spawns" pos="92.3 -93.50002 8.4" rot="0.0 0.0 0.0"/>
+			<location tags="spawns" pos="92.6 -93.5 18.9" rot="0.0 0.0 0.0"/>
+			<location tags="spawns" pos="94.3 -93.50002 -20.0" rot="0.0 0.0 0.0"/>
+		</script>
+		<script pos="0.0 5.0 0.0" file="MOD/script/basic/debris_cleanup.lua"/>
+		<script pos="-40.5 3.4 119.6" file="MOD/script/platform_raise.lua">
+			<group pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+				<voxbox name="Anc" tags="invisible" pos="-50.8 0.1 -10.0" size="200 6 200" brush="BUILT-IN/brush/floor/stone_marble_tile_black.vox">
+					<joint type="prismatic" limits="0 20.1"/>
+				</voxbox>
+				<body name="Elevator" pos="40.6 0.0 0.0" dynamic="true">
+					<voxbox tags="unbreakable" pos="-9.8 0.1 -10.0" rot="0.0 0.0 0.0" size="200 6 200" brush="BUILT-IN/brush/floor/stone_marble_tile_black.vox"/>
+					<voxbox tags="unbreakable" pos="-9.8 0.0 -10.3" rot="0.0 0.0 0.0" size="200 8 5" brush="BUILT-IN/brush/beam/metal_white_5x8.vox"/>
+					<voxbox tags="unbreakable" pos="-10.1 0.0 9.99999" rot="0.0 90.0 0.0" size="200 8 5" brush="BUILT-IN/brush/beam/metal_white_5x8.vox"/>
+					<voxbox tags="unbreakable" pos="-9.8 0.0 9.80001" rot="0.0 0.0 0.0" size="200 8 5" brush="BUILT-IN/brush/beam/metal_white_5x8.vox"/>
+				</body>
+			</group>
+		</script>
+	</group>
+	<water pos="0.0 1.0 0.0"/>
+	<instance pos="60.5 1.0 19.6" rot="0.0 180.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="60.3 1.0 39.60001" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.3 1.0 79.60001" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.3 1.0 99.60001" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="40.3 1.0 119.60001" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="20.3 1.0 119.60001" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.3 1.0 59.59998" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.4 1.0 119.8" rot="0.0 0.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="-59.9 1.0 -0.29998" rot="0.0 -90.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="-39.7 1.0 -0.2" rot="0.0 90.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="-39.7 1.0 -120.39998" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="-19.7 1.0 -120.39998" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 1.0 -100.39998" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 1.0 -80.39995" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 1.0 -60.39999" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 1.0 -40.39995" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.9 1.0 -20.3999" rot="0.0 0.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="60.5 1.0 -0.49999" rot="0.0 90.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="40.3 1.0 -0.6" rot="0.0 -90.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="20.3 1.0 -0.39999" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="0.30007 1.0 -0.39999" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="-19.7 1.0 -0.39999" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.8 1.0 -120.59996" rot="0.0 180.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="-19.7 21.1 -120.39998" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="-39.7 21.1 -120.39998" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.8 21.1 -120.59996" rot="0.0 180.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="-59.7 21.1 -100.39998" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 21.1 -80.39995" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 21.1 -40.39995" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.7 21.1 -60.39999" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="-59.9 21.1 -0.29998" rot="0.0 -90.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="-59.9 21.1 -20.39995" rot="0.0 0.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="-39.7 21.1 -0.2" rot="0.0 90.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="-19.7 21.1 -0.39999" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="0.30007 21.1 -0.39999" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="20.3 21.1 -0.39999" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.5 21.1 -0.49999" rot="0.0 90.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="60.3 21.1 39.60001" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.3 21.1 59.59998" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.3 21.1 79.60001" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.3 21.1 99.60001" rot="0.0 0.0 0.0" file="track200x200.xml"/>
+	<instance pos="60.4 21.1 119.8" rot="0.0 0.0 0.0" file="track200x200 cor.xml"/>
+	<instance pos="40.3 21.1 119.60001" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance pos="20.3 21.1 119.60001" rot="0.0 -90.0 0.0" file="track200x200.xml"/>
+	<instance tags="platform_lift" pos="0.1 1.0 159.60001" rot="0.0 0.0 0.0" file="track200x200 cap.xml"/>
+	<instance tags="platform_lift" pos="0.1 1.0 -141.89999" rot="0.0 180.0 0.0" file="track200x200 cap.xml"/>
+	<instance tags="platform_lift" pos="40.2 1.0 19.8" rot="0.0 0.0 0.0" file="track200x200 cor cap.xml"/>
+	<instance tags="platform_lift" pos="-39.6 1.0 -20.6" rot="0.0 180.0 0.0" file="track200x200 cor cap.xml"/>
+	<instance pos="40.3 21.1 -0.6" rot="0.0 -90.0 0.0" file="track200x200 open.xml"/>
+	<instance pos="60.5 21.1 19.6" rot="0.0 180.0 0.0" file="track200x200 open.xml"/>
+	<voxbox pos="-49.7 1.1 153.60001" size="200 6 200" brush="BUILT-IN/brush/floor/stone_marble_tile_black.vox"/>
+	<voxbox pos="-50.0 1.0 173.60001" rot="0 90" size="200 8 5" brush="BUILT-IN/brush/beam/metal_white_5x8.vox"/>
+	<voxbox pos="-49.7 1.0 153.3" size="200 8 5" brush="BUILT-IN/brush/beam/metal_white_5x8.vox"/>
+	<voxbox pos="-49.7 1.0 173.40002" size="200 8 5" brush="BUILT-IN/brush/beam/metal_white_5x8.vox"/>
+</scene>
+
